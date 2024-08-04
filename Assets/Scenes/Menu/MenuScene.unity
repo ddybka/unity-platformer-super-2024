@@ -133,13 +133,14 @@ GameObject:
   m_Component:
   - component: {fileID: 69195220}
   - component: {fileID: 69195221}
+  - component: {fileID: 69195222}
   m_Layer: 5
   m_Name: modalShop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &69195220
 RectTransform:
   m_ObjectHideFlags: 0
@@ -171,6 +172,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 69195219}
   m_CullTransparentMesh: 1
+--- !u!114 &69195222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69195219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61578c3f4473e448a9f9d2c116f6f98f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modal: {fileID: 69195219}
+  buttonExit: {fileID: 9061739275543136441}
+  content: {fileID: 1012566051}
 --- !u!1 &173102995
 GameObject:
   m_ObjectHideFlags: 0
@@ -2216,13 +2232,14 @@ GameObject:
   m_Component:
   - component: {fileID: 2216444706290697621}
   - component: {fileID: 2216444706290697620}
+  - component: {fileID: 2216444706290697622}
   m_Layer: 5
   m_Name: modalOptions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &2216444706290697620
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2254,6 +2271,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2216444706290697622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2216444706290697618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61578c3f4473e448a9f9d2c116f6f98f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modal: {fileID: 2216444706290697618}
+  buttonExit: {fileID: 7134730315761391864}
+  content: {fileID: 2216444706689505378}
 --- !u!224 &2216444706689505378
 RectTransform:
   m_ObjectHideFlags: 0
