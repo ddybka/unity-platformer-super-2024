@@ -10,13 +10,10 @@ public class PlayerMove : MonoBehaviour
     private Rigidbody2D rigidbody2D;
 
     private float speed = 7f;
-    private float jumpForce = 5f;
+    private float jumpForce = 8f;
 
     private float moveInput;
     private float flipValue;
-
-    private int countJumpsNow;
-    private int countExtraJumps = 1;
 
     private void Awake()
     {
@@ -28,12 +25,8 @@ public class PlayerMove : MonoBehaviour
         moveInput = Input.GetAxis("Horizontal");
         rigidbody2D.velocity = MoveInput();
 
-        countJumpsNow = Ground() ? countExtraJumps : countJumpsNow;
-
-        if (moveInput != 0) flipValue = FlipValue(moveInput);
-        transform.eulerAngles = VectorFlip(flipValue);
-
-        Debug.Log(Ground());
+        flipValue = (moveInput != 0) ? (moveInput > 0 ? 180 : 0) : flipValue;
+        transform.eulerAngles = Vector3.up * flipValue;
     }
 
     private void Update()
@@ -44,24 +37,25 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
+    //
+    // Helpers
+    //
+
     private void Jump()
     {
-        if (countJumpsNow > 0)
+        if (Ground())
         {
             rigidbody2D.velocity = Vector2.up * jumpForce;
-            countJumpsNow--;
         }
     }
 
-    private Vector3 VectorFlip(float count)
-    {
-        Vector3 vector = new Vector3(0, count, 0);
-        return vector;
-    }
+    //
+    // Getters
+    //
 
-    private float FlipValue(float count)
+    public float FlipValue()
     {
-        return count > 0 ? 180 : 0;
+        return flipValue;
     }
 
     private Collider2D Ground()

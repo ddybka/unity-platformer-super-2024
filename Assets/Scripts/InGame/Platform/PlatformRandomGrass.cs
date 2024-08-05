@@ -4,15 +4,37 @@ using UnityEngine;
 
 public class PlatformRandomGrass : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [Header("Borders")]
+    [SerializeField] private Transform leftBorder;
+    [SerializeField] private Transform rightBorder;
+
+    [Header("Grass")]
+
+    [SerializeField] private GameObject[] objectsGrass;
+
+    [SerializeField] private int countGrass;
+
+    [Header("Random Range")]
+    [Range(-1, 100)]
+    [SerializeField] private int randomValue = -1;
+
+    private void Awake()
     {
-        
+        bool spawn = Random.Range(0, 100) < (randomValue == -1 ? 80 : randomValue);
+
+        if(spawn)
+        {
+            for(int i = 0; i < countGrass; i++)
+            {
+                float x_ = Random.Range(leftBorder.position.x, rightBorder.position.x);
+                Vector2 position = new Vector2(x_, leftBorder.position.y);
+                Instantiate(RandomGrass(), position, Quaternion.identity);
+            }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private GameObject RandomGrass()
     {
-        
+        return objectsGrass[Random.Range(0, objectsGrass.Length)];
     }
 }
