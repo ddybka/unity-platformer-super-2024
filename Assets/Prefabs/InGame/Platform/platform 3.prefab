@@ -74,6 +74,7 @@ GameObject:
   - component: {fileID: 8043358733801116129}
   - component: {fileID: 8043358733801116130}
   - component: {fileID: 1143306720183072458}
+  - component: {fileID: 3314198929773525232}
   m_Layer: 3
   m_Name: platform 3
   m_TagString: Untagged
@@ -164,7 +165,22 @@ MonoBehaviour:
   - {fileID: 6616736809258644092, guid: b6a1f02161dd9491b993cd2c1a2ddb69, type: 3}
   - {fileID: 4192576797512302664, guid: 2f60fb05c57384ab4b1f4875052b681d, type: 3}
   countGrass: 3
-  randomValue: -1
+  randomValue: 80
+--- !u!114 &3314198929773525232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8043358733801116131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c36e89bfcd33d4b0282475f8fd5dd9f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  randomValue: 20
+  countSpikes: 1
+  spike: {fileID: 6467449713699286734, guid: 3870bc642176d41eea6015237c39e17f, type: 3}
 --- !u!1 &8043358734176783618
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,6 +17,11 @@ public class PlayerTouch : MonoBehaviour
         {
             Invoke("NextLevel", .5f);
         }
+
+        if (collision.gameObject.CompareTag("Spike"))
+        {
+            Debug.Log("Spike");
+        }
     }
 
     private void NextLevel()

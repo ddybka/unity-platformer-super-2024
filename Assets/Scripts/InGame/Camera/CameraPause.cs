@@ -36,11 +36,17 @@ public class CameraPause : MonoBehaviour
 
     public void Menu()
     {
+        Time.timeScale = 1;
+        pause = false;
+
         SceneManager.LoadScene("MenuScene");
     }
 
     public void Quit()
     {
+        Time.timeScale = 1;
+        pause = false;
+
 #if UNITY_EDITOR
         EditorApplication.isPlaying = false;
 #else
