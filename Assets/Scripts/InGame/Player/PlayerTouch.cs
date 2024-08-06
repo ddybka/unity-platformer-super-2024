@@ -5,11 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class PlayerTouch : MonoBehaviour
 {
+    private PlayerHealth playerHealth;
+
+    private void Start()
+    {
+        playerHealth = GetComponent<PlayerHealth>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Health"))
         {
-            Debug.Log("Health");
+            playerHealth.Add(1);
             Destroy(collision.gameObject);
         }
 
@@ -20,7 +27,8 @@ public class PlayerTouch : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Spike"))
         {
-            Debug.Log("Spike");
+            playerHealth.Damage(1);
+            Destroy(collision.gameObject);
         }
     }
 

@@ -405,6 +405,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: platform 2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1065639349643234355, guid: a0ed88f75c1874cfeab709572ad2464a, type: 3}
+      propertyPath: countBoosts
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065639349643234355, guid: a0ed88f75c1874cfeab709572ad2464a, type: 3}
+      propertyPath: randomValue
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0ed88f75c1874cfeab709572ad2464a, type: 3}
 --- !u!4 &1124427447 stripped
@@ -590,6 +598,14 @@ PrefabInstance:
     - target: {fileID: 739697948413525346, guid: b278109e8d17843d798ea508ec087d09, type: 3}
       propertyPath: m_Name
       value: platform 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149367426016993712, guid: b278109e8d17843d798ea508ec087d09, type: 3}
+      propertyPath: countBoosts
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149367426016993712, guid: b278109e8d17843d798ea508ec087d09, type: 3}
+      propertyPath: randomValue
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8601587756581936531, guid: b278109e8d17843d798ea508ec087d09, type: 3}
       propertyPath: randomValue
@@ -990,6 +1006,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2436275951869077195, guid: d4ef8f81709334cd78de44a016413c81, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666850754505385011, guid: d4ef8f81709334cd78de44a016413c81, type: 3}
+      propertyPath: m_Name
+      value: health
+      objectReference: {fileID: 0}
     - target: {fileID: 2822281202161547003, guid: d4ef8f81709334cd78de44a016413c81, type: 3}
       propertyPath: distanceTop
       value: 12.2
@@ -1005,6 +1029,18 @@ PrefabInstance:
     - target: {fileID: 2822281202161547003, guid: d4ef8f81709334cd78de44a016413c81, type: 3}
       propertyPath: distanceBottom
       value: -5.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706294372423083313, guid: d4ef8f81709334cd78de44a016413c81, type: 3}
+      propertyPath: m_Name
+      value: health
+      objectReference: {fileID: 0}
+    - target: {fileID: 7890876274382656751, guid: d4ef8f81709334cd78de44a016413c81, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067966665019432455, guid: d4ef8f81709334cd78de44a016413c81, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8577451345641614178, guid: d4ef8f81709334cd78de44a016413c81, type: 3}
       propertyPath: m_Name
@@ -1068,6 +1104,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8750523248701681998, guid: d4ef8f81709334cd78de44a016413c81, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845212291425017331, guid: d4ef8f81709334cd78de44a016413c81, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845212291425017331, guid: d4ef8f81709334cd78de44a016413c81, type: 3}
+      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

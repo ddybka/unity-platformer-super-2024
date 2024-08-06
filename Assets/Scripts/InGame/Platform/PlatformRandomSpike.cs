@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlatformRandomSpike : MonoBehaviour
 {
@@ -16,15 +17,21 @@ public class PlatformRandomSpike : MonoBehaviour
 
     private PlatformRandomGrass randomGrass;
 
+    private int timeSpawn = 20;
+    private float timeCount = 0.5f;
+
     private void Start()
     {
         randomGrass = GetComponent<PlatformRandomGrass>();
 
-        bool spawn = Random.Range(0, 100) < randomValue;
+        int number = SceneManager.GetActiveScene().buildIndex;
+        bool spawn = Random.Range(0, 100) < (randomValue + number * timeSpawn);
 
         if(spawn)
         {
-            for (int i = 0; i < Random.Range(1, countSpikes); i++)
+            int minCount = (int) (number * timeCount);
+            minCount = minCount <= countSpikes ? minCount : countSpikes;
+            for (int i = 0; i < Random.Range(minCount, countSpikes); i++)
             {
                 Instantiate(spike, randomGrass.RandomPosition(), Quaternion.identity);
             }

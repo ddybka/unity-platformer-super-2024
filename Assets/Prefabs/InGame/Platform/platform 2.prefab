@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 565345127483831696}
   - component: {fileID: 565345127483831727}
   - component: {fileID: 4790555639042538077}
+  - component: {fileID: 1065639349643234355}
   m_Layer: 3
   m_Name: platform 2
   m_TagString: Untagged
@@ -187,6 +188,22 @@ MonoBehaviour:
   - {fileID: 4192576797512302664, guid: 2f60fb05c57384ab4b1f4875052b681d, type: 3}
   countGrass: 2
   randomValue: -1
+--- !u!114 &1065639349643234355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565345127483831726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c507e6ee5adcd4550888984243865be3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  randomValue: 50
+  countBoosts: 1
+  boosts:
+  - {fileID: 3482561964795304083, guid: 503c9084f10ff449bbee4cb0c9245f28, type: 3}
 --- !u!1 &3312358556460812803
 GameObject:
   m_ObjectHideFlags: 0
